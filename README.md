@@ -5,7 +5,7 @@
   This tutorial will cover core features of ES6 plus some newer, useful features of both ES7 and ES8. Included in this turorial are also *17 lessons* and *4 challenges.* The goal of the course is to refresh my JS skills and increase my knowledge of new features in ES6 and beyond. The course is hosted by [Dylan Isreal][di-linkedin].
 
   You can find Dylan at the following locations:
-  
+
     + [CodeTutorials360][cT360]
     + [LinkedIn][di-linked]
     + [GitHub][di-github]
@@ -36,6 +36,7 @@
 
   const fullName = `${firstName} ${middleInit}. ${lastName}`;
   console.log(fullName); // Brian Q. Anderson
+  ```
 
 
 [1]: https://scrimba.com/g/gintrotoes6
