@@ -16,29 +16,47 @@
 ## 2. Template Literals
   With ES6 JavaScript addresses the pain points surrounding its (poor) handling of the `string` data type. This is done mostly through *Template Literals*. Using the new syntax simplifies the way we concatenate stings in JavaScript.
 
-###### Example Syntax
----
-  ES5 and earlier:
+  By using *Template Literals* (` `${variable1}` `) JS code will now handle spaces and returns as one might imagine (literally).
+
+  The same logic can be applied to the handling of *variables* and *operators* as well. While within a *Template Literal* JavaScript works as JavaScript should.
+
+__*Example Syntax*__
+
+  Concatenation ES5 and earlier:
   ```javascript
   var firstName = 'Brian';
   var middleInit = 'Q';
   var lastName = 'Anderson';
 
   var fullName = firstName + ' ' + middleInit + '. ' + lastName;
-  console.log(fullName); // Brian Q. Anderson
+  console.log(fullName);      // Brian Q. Anderson
   ```
 
-  ES6 and beyond:
+  Concatenation ES6 and beyond:
   ```javascript
   let firstName = 'Brian';
   let middleInit = 'Q';
   let lastName = 'Anderson';
 
   const fullName = `${firstName} ${middleInit}. ${lastName}`;
-  console.log(fullName); // Brian Q. Anderson
+  console.log(fullName);      // Brian Q. Anderson
   ```
 
+  *Template Literal* Handling JS Operators (with a multiline output)
+  ```javascript
+  let num1 = 5;
+  let num2 = 8;
+  let exp1 = 'Multiplication';
+  let exp2 = 'Addition';
 
+  const example = `${exp1}: ${num1 * num2}
+                ${exp2}: ${num1 + num2}`;
+
+  console.log(example);     // Multiplication: 40
+                            // Addition: 13
+  ```
+
+<!-- External Links -->
 [1]: https://scrimba.com/g/gintrotoes6
 [di-youtube]: https://www.youtube.com/channel/UC5Wi_NYysX-LfcqT3Hq9Faw
 [di-linked]: https://www.linkedin.com/in/dylan310/
