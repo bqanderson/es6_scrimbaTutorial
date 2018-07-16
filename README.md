@@ -26,7 +26,7 @@ __*Example Syntax*__
   ```javascript
   var firstName = 'Brian';
   var middleInit = 'Q';
-  var lastName = 'Anderson';
+  var lastNameES5 = 'Anderson';
 
   var fullName = firstName + ' ' + middleInit + '. ' + lastName;
   console.log(fullName);      // Brian Q. Anderson
@@ -36,7 +36,7 @@ __*Example Syntax*__
   ```javascript
   let firstName = 'Brian';
   let middleInit = 'Q';
-  let lastName = 'Anderson';
+  let lastNameES6 = 'Anderson';
 
   const fullName = `${firstName} ${middleInit}. ${lastName}`;
   console.log(fullName);      // Brian Q. Anderson
@@ -46,14 +46,15 @@ __*Example Syntax*__
   ```javascript
   let num1 = 5;
   let num2 = 8;
-  let exp1 = 'Multiplication';
-  let exp2 = 'Addition';
+  let operator1 = 'Multiplication';
+  let operator2 = 'Addition';
 
-  const example = `${exp1}: ${num1 * num2}
-                ${exp2}: ${num1 + num2}`;
+  const example = `${operator1}: ${num1 * num2}
+  ${operator2}: ${num1 + num2}`;
 
-  console.log(example);     // Multiplication: 40
-                            // Addition: 13
+  console.log(example);
+  /* Multiplication: 40
+  *  Addition: 13 */
   ```
 
 <!-- External Links -->
